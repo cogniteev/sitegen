@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+
+<div>
+    You come from here:
+{%- for parent in parents %}
+    <a href="{{parent}}">{{parent}}</a> -
+{%- endfor %}
+</div>
+
+<div>
+    You may be interested in:
+{%- for children in children %}
+    <a href="{{children}}">{{children}}</a> -
+{%- endfor %}
+</div>
+
+
+<div>
+    {%- for p in paragraphs %}
+
+    <p>{{p}}</p>
+{%- endfor %}
+</div>
+
+</body>
+</html>
